@@ -66,6 +66,8 @@ public class KassenWerkzeug
 
     /**
      * Fügt die Funktionalitat zum Beenden-Button hinzu.
+     * Registiert einen Beobachter für die Klassen datumAuswaehlWerkzeug und vorstellungAuswaehlWerkzeug.
+     * 
      * @param Beobachter 
      */
     private void registriereUIAktionen()
@@ -86,6 +88,7 @@ public class KassenWerkzeug
             @Override
             public void reagiereAufAenderung()
             {
+
                 setzeTagesplanFuerAusgewaehltesDatum();
             }
         });

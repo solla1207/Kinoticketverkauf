@@ -80,7 +80,8 @@ public class DatumAuswaehlWerkzeug extends Beobachtbar
 
     /**
      * Verbindet die fachlichen Aktionen mit den Interaktionselementen der
-     * graphischen Benutzungsoberfläche.
+     * graphischen Benutzungsoberfläche und informiert über die Änderung. 
+     * 
      */
     private void registriereUIAktionen()
     {
@@ -102,6 +103,7 @@ public class DatumAuswaehlWerkzeug extends Beobachtbar
                 public void actionPerformed(ActionEvent e)
                 {
                     weiterButtonWurdeGedrueckt();
+                    informiereUeberAenderung();
                 }
             });
     }
